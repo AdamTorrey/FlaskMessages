@@ -4,8 +4,8 @@
     <h1>{% block title %} Messages {% endblock %}</h1>
     {% for message in messages %}
         <div class='message'>
-            <h3>{{ message['title'] }}</h3>
-            <p>{{ message['content'] }}</p>
+            <h3>{{ message[0] }}</h3>
+            <p>{{ message[1] }}</p>
         </div>
     {% endfor %}
 {% endblock %}
